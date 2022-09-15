@@ -20,7 +20,7 @@ public class Tache {
     private long id;
 
     @Column(name = "desc_tache" )
-    private String desc_equip;
+    private String desc_tache;
 
     @Column(name = "date_execution")
     private String date_execution;

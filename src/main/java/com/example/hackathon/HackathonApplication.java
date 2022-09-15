@@ -1,7 +1,9 @@
 package com.example.hackathon;
 
 import com.example.hackathon.model.Equipement;
+import com.example.hackathon.model.Tache;
 import com.example.hackathon.repository.EquipementRepository;
+import com.example.hackathon.repository.TacheRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -15,23 +17,17 @@ public class HackathonApplication implements CommandLineRunner {
     }
 
     @Autowired
-    private EquipementRepository equipementRepository;
+    private TacheRepository tacheRepository;
 
     @Override
     public void run(String... args) throws Exception {
-        Equipement equipement = new Equipement();
-        equipement.setName_equip("Tracteur");
-        equipement.setDesc_equip("Utiliser pour labourer sur des grandes espaces");
-        equipement.setTemps_fonctionnement("10h30min");
-        equipement.setPosition("Douala");
+        Tache tache = new Tache();
+        tache.setDesc_tache("Defrichage");
+        tache.setDate_execution("Lundi le 18 novembre");
+        tache.setMachine_execution("Tronsoneuse");
 
-        equipementRepository.save(equipement);
+        tacheRepository.save(tache);
 
-        Equipement equipement1 = new Equipement();
-        equipement1.setName_equip("Capteur PH");
-        equipement1.setDesc_equip("Utiliser pour mesurer le degres en nutriment du sol");
-        equipement1.setTemps_fonctionnement("5h15min");
-        equipement1.setPosition("Yaounde");
-        equipementRepository.save(equipement1);
+
     }
 }
