@@ -1,1 +1,1 @@
-# Ce hackathon visait a proposer une solution permettant de collecter et de controller les capteurs IoT a travers les donnees envoyees par ces capteurs
+# Ce hackathon visait à proposer une solution permettant de collecter et de Controller les capteurs IoT à travers les données envoyées par ces capteurs
